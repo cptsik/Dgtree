@@ -1,0 +1,37 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset=""urf-8/>
+    <title>
+        대구광역시 가로수 관리 시스템
+    </title>
+</head>
+<body>
+	<h1>대구광역시 가로수 관리 시스템</h1>
+	
+	<ol>
+		<li><a href="DGtree.html">메인화면</a></li>
+		<li><a href="DGtree1.html">가로수 지도</a></li>
+		<li><a href="DGtree2.html">가로수 현황</a></li>
+	</ol>
+	<h2>가로수 현황</h2>
+
+<p>
+	<div id="map" style="width:1000px;height:500px;"></div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3182d34a6c98d75b07ea18faefde66ca"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
+</p>
+<p>This system is made by JEONGJAESIK SHOUT OUT PZ</p>
+</body>
+
+
+</html>
